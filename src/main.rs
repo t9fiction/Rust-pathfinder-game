@@ -79,6 +79,7 @@ impl Game {
         }
     }
 
+    // Function to move player
     fn move_player(&mut self, direction: &str) {
         let current_room = &self.player.current_room;
         if let Some(room) = self.rooms.get(current_room) {
